@@ -2,6 +2,7 @@ package com.verbiox;
 
 import com.verbiox.ItemGroups.ModItemGroups;
 import com.verbiox.blocks.NoGravGravel;
+import com.verbiox.blocks.NoGravSand;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,9 +19,10 @@ public class NoGravBlocks implements ModInitializer {
 	public void onInitialize() {
 		NoGravGravel.registerModItems();
 		LOGGER.info("loaded NoGravGravel");
+		NoGravSand.registerModItems();
+		LOGGER.info("loaded NoGravSand");
 		ModItemGroups.registerItemGroups();
 		LOGGER.info("loaded ModItemGroups");
-
 		LOGGER.info("loaded NoGravBlocks");
 	}
 }
