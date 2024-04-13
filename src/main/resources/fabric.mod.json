@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "nogravblocksverbiox",
+	"version": "${version}",
+	"name": "No grav blocks",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Verbiox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nogravblocksverbiox/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.verbiox.NoGravBlocks"
+		],
+		"fabric-datagen": [
+			"com.verbiox.NoGravBlocksDataGenerator"
+		]
+	},
+	"mixins": [
+		"no-grav-blocks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
