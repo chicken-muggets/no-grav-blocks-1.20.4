@@ -2,6 +2,7 @@ package com.verbiox.ItemGroups;
 
 import com.verbiox.NoGravBlocks;
 import com.verbiox.blocks.NoGravGravel;
+import com.verbiox.blocks.NoGravSand;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,6 +17,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.noGrav"))
                     .icon(() -> new ItemStack(NoGravGravel.NO_GRAV_GRAVEL)).entries((displayContext, entries) -> {
                         entries.add(NoGravGravel.NO_GRAV_GRAVEL);
+                        entries.add(NoGravSand.NO_GRAV_SAND);
     }).build());
     public static void registerItemGroups() {
         NoGravBlocks.LOGGER.info("Item groups loaded!");

@@ -2,6 +2,7 @@
   "type": "crafting_shaped",
   "pattern": [
     "###",
+    "###",
     "###"
   ],
   "key": {
@@ -11,6 +12,6 @@
   },
   "result": {
     "item": "nogravblocksverbiox:no_grav_sand",
-    "count": 3
+    "count": 4
   }
 }

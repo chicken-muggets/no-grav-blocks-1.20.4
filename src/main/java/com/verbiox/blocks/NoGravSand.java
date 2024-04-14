@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class NoGravSand {
 
-    public static final Block NO_GRAV_sand = registerBlock("no_grav_sand", new Block(FabricBlockSettings.copy(Blocks.GRAVEL)));
+    public static final Block NO_GRAV_SAND = registerBlock("no_grav_sand", new Block(FabricBlockSettings.copy(Blocks.GRAVEL)));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(NoGravBlocks.MOD_ID, name), block);
